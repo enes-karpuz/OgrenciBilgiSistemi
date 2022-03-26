@@ -6,5 +6,10 @@ namespace OgrenciBilgiSistemi
         {
             InitializeComponent();
         }
+
+        private void LblCikis_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
