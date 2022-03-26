@@ -30,31 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKayitEkrani));
             this.PnlSol = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PbTwitter = new System.Windows.Forms.PictureBox();
+            this.PbYoutube = new System.Windows.Forms.PictureBox();
+            this.PbInstagram = new System.Windows.Forms.PictureBox();
+            this.PbFacebokk = new System.Windows.Forms.PictureBox();
             this.LblTsLogo = new System.Windows.Forms.Label();
             this.PbTsLogo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LblHosgeldiniz = new System.Windows.Forms.Label();
+            this.PnlAdi = new System.Windows.Forms.Panel();
+            this.LblAdi = new System.Windows.Forms.Label();
+            this.TxtAdi = new System.Windows.Forms.TextBox();
             this.LblCikis = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.TxtSoyadi = new System.Windows.Forms.TextBox();
+            this.LblSoyadi = new System.Windows.Forms.Label();
+            this.PnlSoyadi = new System.Windows.Forms.Panel();
+            this.LblDogumTarihi = new System.Windows.Forms.Label();
+            this.PnlDogumTarihi = new System.Windows.Forms.Panel();
+            this.BtnKayitOl = new System.Windows.Forms.Button();
+            this.CbUyelik = new System.Windows.Forms.CheckBox();
             this.PnlSag = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.PnlSol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbTwitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbYoutube)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbInstagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbFacebokk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbTsLogo)).BeginInit();
             this.PnlSag.SuspendLayout();
             this.SuspendLayout();
@@ -62,10 +62,10 @@
             // PnlSol
             // 
             this.PnlSol.BackColor = System.Drawing.Color.White;
-            this.PnlSol.Controls.Add(this.pictureBox4);
-            this.PnlSol.Controls.Add(this.pictureBox3);
-            this.PnlSol.Controls.Add(this.pictureBox2);
-            this.PnlSol.Controls.Add(this.pictureBox1);
+            this.PnlSol.Controls.Add(this.PbTwitter);
+            this.PnlSol.Controls.Add(this.PbYoutube);
+            this.PnlSol.Controls.Add(this.PbInstagram);
+            this.PnlSol.Controls.Add(this.PbFacebokk);
             this.PnlSol.Controls.Add(this.LblTsLogo);
             this.PnlSol.Controls.Add(this.PbTsLogo);
             this.PnlSol.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,45 +75,45 @@
             this.PnlSol.Size = new System.Drawing.Size(281, 540);
             this.PnlSol.TabIndex = 0;
             // 
-            // pictureBox4
+            // PbTwitter
             // 
-            this.pictureBox4.Image = global::OgrenciBilgiSistemi.Properties.Resources.twitter;
-            this.pictureBox4.Location = new System.Drawing.Point(147, 463);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
+            this.PbTwitter.Image = global::OgrenciBilgiSistemi.Properties.Resources.twitter;
+            this.PbTwitter.Location = new System.Drawing.Point(147, 463);
+            this.PbTwitter.Name = "PbTwitter";
+            this.PbTwitter.Size = new System.Drawing.Size(50, 50);
+            this.PbTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbTwitter.TabIndex = 5;
+            this.PbTwitter.TabStop = false;
             // 
-            // pictureBox3
+            // PbYoutube
             // 
-            this.pictureBox3.Image = global::OgrenciBilgiSistemi.Properties.Resources.youtube;
-            this.pictureBox3.Location = new System.Drawing.Point(210, 463);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.PbYoutube.Image = global::OgrenciBilgiSistemi.Properties.Resources.youtube;
+            this.PbYoutube.Location = new System.Drawing.Point(210, 463);
+            this.PbYoutube.Name = "PbYoutube";
+            this.PbYoutube.Size = new System.Drawing.Size(50, 50);
+            this.PbYoutube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbYoutube.TabIndex = 4;
+            this.PbYoutube.TabStop = false;
             // 
-            // pictureBox2
+            // PbInstagram
             // 
-            this.pictureBox2.Image = global::OgrenciBilgiSistemi.Properties.Resources.instagram;
-            this.pictureBox2.Location = new System.Drawing.Point(84, 463);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.PbInstagram.Image = global::OgrenciBilgiSistemi.Properties.Resources.instagram;
+            this.PbInstagram.Location = new System.Drawing.Point(84, 463);
+            this.PbInstagram.Name = "PbInstagram";
+            this.PbInstagram.Size = new System.Drawing.Size(50, 50);
+            this.PbInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbInstagram.TabIndex = 3;
+            this.PbInstagram.TabStop = false;
             // 
-            // pictureBox1
+            // PbFacebokk
             // 
-            this.pictureBox1.Image = global::OgrenciBilgiSistemi.Properties.Resources.facebook;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 463);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.PbFacebokk.Image = global::OgrenciBilgiSistemi.Properties.Resources.facebook;
+            this.PbFacebokk.Location = new System.Drawing.Point(21, 463);
+            this.PbFacebokk.Name = "PbFacebokk";
+            this.PbFacebokk.Size = new System.Drawing.Size(50, 50);
+            this.PbFacebokk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbFacebokk.TabIndex = 2;
+            this.PbFacebokk.TabStop = false;
             // 
             // LblTsLogo
             // 
@@ -137,45 +137,45 @@
             this.PbTsLogo.TabIndex = 0;
             this.PbTsLogo.TabStop = false;
             // 
-            // label1
+            // LblHosgeldiniz
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.label1.Location = new System.Drawing.Point(33, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 49);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hoşgeldiniz";
+            this.LblHosgeldiniz.AutoSize = true;
+            this.LblHosgeldiniz.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblHosgeldiniz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.LblHosgeldiniz.Location = new System.Drawing.Point(33, 19);
+            this.LblHosgeldiniz.Name = "LblHosgeldiniz";
+            this.LblHosgeldiniz.Size = new System.Drawing.Size(239, 49);
+            this.LblHosgeldiniz.TabIndex = 1;
+            this.LblHosgeldiniz.Text = "Hoşgeldiniz";
             // 
-            // panel1
+            // PnlAdi
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(33, 201);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 1);
-            this.panel1.TabIndex = 2;
+            this.PnlAdi.BackColor = System.Drawing.Color.Black;
+            this.PnlAdi.Location = new System.Drawing.Point(33, 201);
+            this.PnlAdi.Name = "PnlAdi";
+            this.PnlAdi.Size = new System.Drawing.Size(350, 1);
+            this.PnlAdi.TabIndex = 2;
             // 
-            // label2
+            // LblAdi
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.label2.Location = new System.Drawing.Point(33, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 34);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Adı";
+            this.LblAdi.AutoSize = true;
+            this.LblAdi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.LblAdi.Location = new System.Drawing.Point(33, 126);
+            this.LblAdi.Name = "LblAdi";
+            this.LblAdi.Size = new System.Drawing.Size(61, 34);
+            this.LblAdi.TabIndex = 3;
+            this.LblAdi.Text = "Adı";
             // 
-            // textBox1
+            // TxtAdi
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
-            this.textBox1.Location = new System.Drawing.Point(33, 163);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 35);
-            this.textBox1.TabIndex = 4;
+            this.TxtAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtAdi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
+            this.TxtAdi.Location = new System.Drawing.Point(33, 163);
+            this.TxtAdi.Name = "TxtAdi";
+            this.TxtAdi.Size = new System.Drawing.Size(350, 35);
+            this.TxtAdi.TabIndex = 4;
             // 
             // LblCikis
             // 
@@ -189,109 +189,109 @@
             this.LblCikis.Text = "X";
             this.LblCikis.Click += new System.EventHandler(this.LblCikis_Click);
             // 
-            // textBox2
+            // TxtSoyadi
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
-            this.textBox2.Location = new System.Drawing.Point(33, 242);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(350, 35);
-            this.textBox2.TabIndex = 8;
+            this.TxtSoyadi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtSoyadi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtSoyadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
+            this.TxtSoyadi.Location = new System.Drawing.Point(33, 242);
+            this.TxtSoyadi.Name = "TxtSoyadi";
+            this.TxtSoyadi.Size = new System.Drawing.Size(350, 35);
+            this.TxtSoyadi.TabIndex = 8;
             // 
-            // label3
+            // LblSoyadi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.label3.Location = new System.Drawing.Point(33, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 34);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Soyadı";
+            this.LblSoyadi.AutoSize = true;
+            this.LblSoyadi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblSoyadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.LblSoyadi.Location = new System.Drawing.Point(33, 205);
+            this.LblSoyadi.Name = "LblSoyadi";
+            this.LblSoyadi.Size = new System.Drawing.Size(106, 34);
+            this.LblSoyadi.TabIndex = 7;
+            this.LblSoyadi.Text = "Soyadı";
             // 
-            // panel2
+            // PnlSoyadi
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(33, 283);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(350, 1);
-            this.panel2.TabIndex = 6;
+            this.PnlSoyadi.BackColor = System.Drawing.Color.Black;
+            this.PnlSoyadi.Location = new System.Drawing.Point(33, 283);
+            this.PnlSoyadi.Name = "PnlSoyadi";
+            this.PnlSoyadi.Size = new System.Drawing.Size(350, 1);
+            this.PnlSoyadi.TabIndex = 6;
             // 
-            // label4
+            // LblDogumTarihi
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.label4.Location = new System.Drawing.Point(33, 287);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 34);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Doğum Tarihi";
+            this.LblDogumTarihi.AutoSize = true;
+            this.LblDogumTarihi.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblDogumTarihi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.LblDogumTarihi.Location = new System.Drawing.Point(33, 287);
+            this.LblDogumTarihi.Name = "LblDogumTarihi";
+            this.LblDogumTarihi.Size = new System.Drawing.Size(193, 34);
+            this.LblDogumTarihi.TabIndex = 10;
+            this.LblDogumTarihi.Text = "Doğum Tarihi";
             // 
-            // panel3
+            // PnlDogumTarihi
             // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(33, 365);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(350, 1);
-            this.panel3.TabIndex = 9;
+            this.PnlDogumTarihi.BackColor = System.Drawing.Color.Black;
+            this.PnlDogumTarihi.Location = new System.Drawing.Point(33, 365);
+            this.PnlDogumTarihi.Name = "PnlDogumTarihi";
+            this.PnlDogumTarihi.Size = new System.Drawing.Size(350, 1);
+            this.PnlDogumTarihi.TabIndex = 9;
             // 
-            // button1
+            // BtnKayitOl
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
-            this.button1.Location = new System.Drawing.Point(33, 452);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(350, 61);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Kayıt Ol";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnKayitOl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.BtnKayitOl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKayitOl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
+            this.BtnKayitOl.Location = new System.Drawing.Point(33, 452);
+            this.BtnKayitOl.Name = "BtnKayitOl";
+            this.BtnKayitOl.Size = new System.Drawing.Size(350, 61);
+            this.BtnKayitOl.TabIndex = 12;
+            this.BtnKayitOl.Text = "Kayıt Ol";
+            this.BtnKayitOl.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // CbUyelik
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.checkBox1.Location = new System.Drawing.Point(33, 392);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(330, 54);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Üyelik sözleşmesini okudum\r\n ve şartları kabul ediyorum.";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CbUyelik.AutoSize = true;
+            this.CbUyelik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.CbUyelik.Location = new System.Drawing.Point(33, 392);
+            this.CbUyelik.Name = "CbUyelik";
+            this.CbUyelik.Size = new System.Drawing.Size(330, 54);
+            this.CbUyelik.TabIndex = 13;
+            this.CbUyelik.Text = "Üyelik sözleşmesini okudum\r\n ve şartları kabul ediyorum.";
+            this.CbUyelik.UseVisualStyleBackColor = true;
             // 
             // PnlSag
             // 
-            this.PnlSag.Controls.Add(this.dateTimePicker1);
-            this.PnlSag.Controls.Add(this.panel3);
-            this.PnlSag.Controls.Add(this.checkBox1);
-            this.PnlSag.Controls.Add(this.panel2);
-            this.PnlSag.Controls.Add(this.label1);
-            this.PnlSag.Controls.Add(this.panel1);
-            this.PnlSag.Controls.Add(this.button1);
-            this.PnlSag.Controls.Add(this.label2);
-            this.PnlSag.Controls.Add(this.textBox1);
-            this.PnlSag.Controls.Add(this.label4);
+            this.PnlSag.Controls.Add(this.dtpDogumTarihi);
+            this.PnlSag.Controls.Add(this.PnlDogumTarihi);
+            this.PnlSag.Controls.Add(this.CbUyelik);
+            this.PnlSag.Controls.Add(this.PnlSoyadi);
+            this.PnlSag.Controls.Add(this.LblHosgeldiniz);
+            this.PnlSag.Controls.Add(this.PnlAdi);
+            this.PnlSag.Controls.Add(this.BtnKayitOl);
+            this.PnlSag.Controls.Add(this.LblAdi);
+            this.PnlSag.Controls.Add(this.TxtAdi);
+            this.PnlSag.Controls.Add(this.LblDogumTarihi);
             this.PnlSag.Controls.Add(this.LblCikis);
-            this.PnlSag.Controls.Add(this.label3);
-            this.PnlSag.Controls.Add(this.textBox2);
+            this.PnlSag.Controls.Add(this.LblSoyadi);
+            this.PnlSag.Controls.Add(this.TxtSoyadi);
             this.PnlSag.Dock = System.Windows.Forms.DockStyle.Right;
             this.PnlSag.Location = new System.Drawing.Point(281, 0);
             this.PnlSag.Name = "PnlSag";
             this.PnlSag.Size = new System.Drawing.Size(419, 540);
             this.PnlSag.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // dtpDogumTarihi
             // 
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
-            this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(33, 326);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(350, 37);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtpDogumTarihi.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dtpDogumTarihi.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
+            this.dtpDogumTarihi.CustomFormat = "";
+            this.dtpDogumTarihi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDogumTarihi.Location = new System.Drawing.Point(33, 326);
+            this.dtpDogumTarihi.Name = "dtpDogumTarihi";
+            this.dtpDogumTarihi.Size = new System.Drawing.Size(350, 37);
+            this.dtpDogumTarihi.TabIndex = 14;
             // 
             // FrmKayitEkrani
             // 
@@ -310,10 +310,10 @@
             this.Text = "Öğrenci Kayıt Ekranı";
             this.PnlSol.ResumeLayout(false);
             this.PnlSol.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbTwitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbYoutube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbInstagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbFacebokk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbTsLogo)).EndInit();
             this.PnlSag.ResumeLayout(false);
             this.PnlSag.PerformLayout();
@@ -326,23 +326,23 @@
         private Panel PnlSol;
         private PictureBox PbTsLogo;
         private Label LblTsLogo;
-        private Label label1;
-        private Panel panel1;
-        private Label label2;
-        private TextBox textBox1;
+        private Label LblHosgeldiniz;
+        private Panel PnlAdi;
+        private Label LblAdi;
+        private TextBox TxtAdi;
         private Label LblCikis;
-        private TextBox textBox2;
-        private Label label3;
-        private Panel panel2;
-        private Label label4;
-        private Panel panel3;
-        private Button button1;
-        private CheckBox checkBox1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
+        private TextBox TxtSoyadi;
+        private Label LblSoyadi;
+        private Panel PnlSoyadi;
+        private Label LblDogumTarihi;
+        private Panel PnlDogumTarihi;
+        private Button BtnKayitOl;
+        private CheckBox CbUyelik;
+        private PictureBox PbTwitter;
+        private PictureBox PbYoutube;
+        private PictureBox PbInstagram;
+        private PictureBox PbFacebokk;
         private Panel PnlSag;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpDogumTarihi;
     }
 }
