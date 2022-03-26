@@ -49,6 +49,9 @@
             this.BtnKayitOl = new System.Windows.Forms.Button();
             this.CbUyelik = new System.Windows.Forms.CheckBox();
             this.PnlSag = new System.Windows.Forms.Panel();
+            this.PnlEmail = new System.Windows.Forms.Panel();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
             this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.PnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbTwitter)).BeginInit();
@@ -72,13 +75,13 @@
             this.PnlSol.Location = new System.Drawing.Point(0, 0);
             this.PnlSol.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PnlSol.Name = "PnlSol";
-            this.PnlSol.Size = new System.Drawing.Size(281, 540);
+            this.PnlSol.Size = new System.Drawing.Size(281, 594);
             this.PnlSol.TabIndex = 0;
             // 
             // PbTwitter
             // 
             this.PbTwitter.Image = global::OgrenciBilgiSistemi.Properties.Resources.twitter;
-            this.PbTwitter.Location = new System.Drawing.Point(147, 463);
+            this.PbTwitter.Location = new System.Drawing.Point(147, 532);
             this.PbTwitter.Name = "PbTwitter";
             this.PbTwitter.Size = new System.Drawing.Size(50, 50);
             this.PbTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +91,7 @@
             // PbYoutube
             // 
             this.PbYoutube.Image = global::OgrenciBilgiSistemi.Properties.Resources.youtube;
-            this.PbYoutube.Location = new System.Drawing.Point(210, 463);
+            this.PbYoutube.Location = new System.Drawing.Point(210, 532);
             this.PbYoutube.Name = "PbYoutube";
             this.PbYoutube.Size = new System.Drawing.Size(50, 50);
             this.PbYoutube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +101,7 @@
             // PbInstagram
             // 
             this.PbInstagram.Image = global::OgrenciBilgiSistemi.Properties.Resources.instagram;
-            this.PbInstagram.Location = new System.Drawing.Point(84, 463);
+            this.PbInstagram.Location = new System.Drawing.Point(84, 532);
             this.PbInstagram.Name = "PbInstagram";
             this.PbInstagram.Size = new System.Drawing.Size(50, 50);
             this.PbInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,12 +111,13 @@
             // PbFacebokk
             // 
             this.PbFacebokk.Image = global::OgrenciBilgiSistemi.Properties.Resources.facebook;
-            this.PbFacebokk.Location = new System.Drawing.Point(21, 463);
+            this.PbFacebokk.Location = new System.Drawing.Point(21, 532);
             this.PbFacebokk.Name = "PbFacebokk";
             this.PbFacebokk.Size = new System.Drawing.Size(50, 50);
             this.PbFacebokk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbFacebokk.TabIndex = 2;
             this.PbFacebokk.TabStop = false;
+            this.PbFacebokk.Click += new System.EventHandler(this.PbFacebokk_Click);
             // 
             // LblTsLogo
             // 
@@ -240,9 +244,10 @@
             // BtnKayitOl
             // 
             this.BtnKayitOl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.BtnKayitOl.Enabled = false;
             this.BtnKayitOl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnKayitOl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
-            this.BtnKayitOl.Location = new System.Drawing.Point(33, 452);
+            this.BtnKayitOl.Location = new System.Drawing.Point(33, 521);
             this.BtnKayitOl.Name = "BtnKayitOl";
             this.BtnKayitOl.Size = new System.Drawing.Size(350, 61);
             this.BtnKayitOl.TabIndex = 12;
@@ -254,15 +259,19 @@
             // 
             this.CbUyelik.AutoSize = true;
             this.CbUyelik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.CbUyelik.Location = new System.Drawing.Point(33, 392);
+            this.CbUyelik.Location = new System.Drawing.Point(33, 461);
             this.CbUyelik.Name = "CbUyelik";
             this.CbUyelik.Size = new System.Drawing.Size(330, 54);
             this.CbUyelik.TabIndex = 13;
             this.CbUyelik.Text = "Üyelik sözleşmesini okudum\r\n ve şartları kabul ediyorum.";
             this.CbUyelik.UseVisualStyleBackColor = true;
+            this.CbUyelik.CheckedChanged += new System.EventHandler(this.CbUyelik_CheckedChanged);
             // 
             // PnlSag
             // 
+            this.PnlSag.Controls.Add(this.PnlEmail);
+            this.PnlSag.Controls.Add(this.LblEmail);
+            this.PnlSag.Controls.Add(this.TxtEmail);
             this.PnlSag.Controls.Add(this.dtpDogumTarihi);
             this.PnlSag.Controls.Add(this.PnlDogumTarihi);
             this.PnlSag.Controls.Add(this.CbUyelik);
@@ -279,8 +288,37 @@
             this.PnlSag.Dock = System.Windows.Forms.DockStyle.Right;
             this.PnlSag.Location = new System.Drawing.Point(281, 0);
             this.PnlSag.Name = "PnlSag";
-            this.PnlSag.Size = new System.Drawing.Size(419, 540);
+            this.PnlSag.Size = new System.Drawing.Size(419, 594);
             this.PnlSag.TabIndex = 14;
+            // 
+            // PnlEmail
+            // 
+            this.PnlEmail.BackColor = System.Drawing.Color.Black;
+            this.PnlEmail.Location = new System.Drawing.Point(33, 444);
+            this.PnlEmail.Name = "PnlEmail";
+            this.PnlEmail.Size = new System.Drawing.Size(350, 1);
+            this.PnlEmail.TabIndex = 15;
+            // 
+            // LblEmail
+            // 
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
+            this.LblEmail.Location = new System.Drawing.Point(33, 369);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(88, 34);
+            this.LblEmail.TabIndex = 16;
+            this.LblEmail.Text = "Email";
+            // 
+            // TxtEmail
+            // 
+            this.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtEmail.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
+            this.TxtEmail.Location = new System.Drawing.Point(33, 406);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(350, 35);
+            this.TxtEmail.TabIndex = 17;
             // 
             // dtpDogumTarihi
             // 
@@ -299,7 +337,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(700, 540);
+            this.ClientSize = new System.Drawing.Size(700, 594);
             this.Controls.Add(this.PnlSol);
             this.Controls.Add(this.PnlSag);
             this.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -345,5 +383,8 @@
         private PictureBox PbFacebokk;
         private Panel PnlSag;
         private DateTimePicker dtpDogumTarihi;
+        private Panel PnlEmail;
+        private Label LblEmail;
+        private TextBox TxtEmail;
     }
 }

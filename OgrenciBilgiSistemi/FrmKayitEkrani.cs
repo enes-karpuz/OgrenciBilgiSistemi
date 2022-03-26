@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace OgrenciBilgiSistemi
 {
     public partial class FrmKayitEkrani : Form
@@ -15,7 +17,28 @@ namespace OgrenciBilgiSistemi
         private void BtnKayitOl_Click(object sender, EventArgs e)
         {
             SQLHelper sqlHelper = new SQLHelper();
-            sqlHelper.SqlKayit(new Ogrenci(TxtAdi.Text, TxtSoyadi.Text, dtpDogumTarihi.Value, "abc@gmail.com", true));
+            sqlHelper.SqlKayit(new Ogrenci(TxtAdi.Text, TxtSoyadi.Text, dtpDogumTarihi.Value, TxtEmail.Text, CbUyelik.Checked));
+        }
+
+        private void CbUyelik_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!CbUyelik.Checked)
+            {
+                BtnKayitOl.Enabled = false;
+            }
+            else
+            {
+                BtnKayitOl.Enabled = true;
+            }
+        }
+
+        private void PbFacebokk_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.facebook.com/Trabzonspor",
+                UseShellExecute = true
+            });
         }
     }
 }

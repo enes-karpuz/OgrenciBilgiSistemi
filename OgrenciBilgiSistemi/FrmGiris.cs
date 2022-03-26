@@ -26,14 +26,21 @@ namespace OgrenciBilgiSistemi
         {
             SQLHelper sqlHelper = new SQLHelper();
 
-            if (sqlHelper.KullaniciKontrol(new Kullanici(TxtKullanici.Text, TxtSifre.Text)).Rows[0]["Sifre"].ToString() == TxtSifre.Text)
+            try
             {
-                FrmKayitEkrani frmKayitEkrani = new FrmKayitEkrani();
-                frmKayitEkrani.ShowDialog();
+                if (sqlHelper.KullaniciKontrol(new Kullanici(TxtKullanici.Text, TxtSifre.Text)).Rows[0]["Sifre"].ToString() == TxtSifre.Text)
+                {
+                    FrmKayitEkrani frmKayitEkrani = new FrmKayitEkrani();
+                    frmKayitEkrani.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Yanlış şifre girdiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Yanlış şifre girdiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.StackTrace, ex.Message);
             }
         }
     }
