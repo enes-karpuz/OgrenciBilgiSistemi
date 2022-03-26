@@ -10,7 +10,7 @@ namespace OgrenciBilgiSistemi
 {
     public class SQLHelper
     {
-        public SqlConnection sqlConnection = new SqlConnection("Data Source=ENES-THINKPAD;Initial Catalog=OgrenciBilgiSistemi;Integrated Security=True");
+        private SqlConnection sqlConnection = new SqlConnection("Data Source=ENES-THINKPAD;Initial Catalog=OgrenciBilgiSistemi;Integrated Security=True");
 
         public bool SqlKayit(Ogrenci ogrenci)
         {
@@ -28,6 +28,28 @@ namespace OgrenciBilgiSistemi
                 sqlCommand.ExecuteNonQuery();
                 sqlConnection.Close();
                 return true;
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+        }
+
+        public DataTable KullaniciKontrol(Kullanici kullanici)
+        {
+            if (sqlConnection.State == ConnectionState.Closed)
+            {
+                sqlConnection.Open();
+            }
+
+            try
+            {
+                DataTable dataTable = new DataTable();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"SELECT * FROM Kullanici " +
+                    $"WHERE KullaniciAdi = '{kullanici.KullaniciAdi}'", sqlConnection);
+                sqlDataAdapter.Fill(dataTable);
+                sqlConnection.Close();
+                return dataTable;
             }
             catch (Exception e)
             {
