@@ -52,7 +52,7 @@
             this.PnlEmail = new System.Windows.Forms.Panel();
             this.LblEmail = new System.Windows.Forms.Label();
             this.TxtEmail = new System.Windows.Forms.TextBox();
-            this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.DtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.PnlSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbYoutube)).BeginInit();
@@ -123,10 +123,10 @@
             // 
             this.LblTsLogo.AutoSize = true;
             this.LblTsLogo.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblTsLogo.Location = new System.Drawing.Point(9, 209);
+            this.LblTsLogo.Location = new System.Drawing.Point(26, 209);
             this.LblTsLogo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTsLogo.Name = "LblTsLogo";
-            this.LblTsLogo.Size = new System.Drawing.Size(263, 52);
+            this.LblTsLogo.Size = new System.Drawing.Size(228, 46);
             this.LblTsLogo.TabIndex = 1;
             this.LblTsLogo.Text = "Trabzonspor Üniversitesi\r\n  Öğrenci Kayıt Sistemi";
             // 
@@ -144,13 +144,13 @@
             // LblHosgeldiniz
             // 
             this.LblHosgeldiniz.AutoSize = true;
-            this.LblHosgeldiniz.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblHosgeldiniz.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.LblHosgeldiniz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
-            this.LblHosgeldiniz.Location = new System.Drawing.Point(33, 19);
+            this.LblHosgeldiniz.Location = new System.Drawing.Point(33, 52);
             this.LblHosgeldiniz.Name = "LblHosgeldiniz";
-            this.LblHosgeldiniz.Size = new System.Drawing.Size(239, 49);
+            this.LblHosgeldiniz.Size = new System.Drawing.Size(352, 37);
             this.LblHosgeldiniz.TabIndex = 1;
-            this.LblHosgeldiniz.Text = "Hoşgeldiniz";
+            this.LblHosgeldiniz.Text = "Okulumuza Hoşgeldiniz";
             // 
             // PnlAdi
             // 
@@ -167,7 +167,7 @@
             this.LblAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.LblAdi.Location = new System.Drawing.Point(33, 126);
             this.LblAdi.Name = "LblAdi";
-            this.LblAdi.Size = new System.Drawing.Size(61, 34);
+            this.LblAdi.Size = new System.Drawing.Size(52, 30);
             this.LblAdi.TabIndex = 3;
             this.LblAdi.Text = "Adı";
             // 
@@ -178,7 +178,7 @@
             this.TxtAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
             this.TxtAdi.Location = new System.Drawing.Point(33, 163);
             this.TxtAdi.Name = "TxtAdi";
-            this.TxtAdi.Size = new System.Drawing.Size(350, 35);
+            this.TxtAdi.Size = new System.Drawing.Size(350, 29);
             this.TxtAdi.TabIndex = 4;
             // 
             // LblCikis
@@ -188,7 +188,7 @@
             this.LblCikis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.LblCikis.Location = new System.Drawing.Point(379, 9);
             this.LblCikis.Name = "LblCikis";
-            this.LblCikis.Size = new System.Drawing.Size(28, 28);
+            this.LblCikis.Size = new System.Drawing.Size(24, 23);
             this.LblCikis.TabIndex = 5;
             this.LblCikis.Text = "X";
             this.LblCikis.Click += new System.EventHandler(this.LblCikis_Click);
@@ -200,7 +200,7 @@
             this.TxtSoyadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
             this.TxtSoyadi.Location = new System.Drawing.Point(33, 242);
             this.TxtSoyadi.Name = "TxtSoyadi";
-            this.TxtSoyadi.Size = new System.Drawing.Size(350, 35);
+            this.TxtSoyadi.Size = new System.Drawing.Size(350, 29);
             this.TxtSoyadi.TabIndex = 8;
             // 
             // LblSoyadi
@@ -210,7 +210,7 @@
             this.LblSoyadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.LblSoyadi.Location = new System.Drawing.Point(33, 205);
             this.LblSoyadi.Name = "LblSoyadi";
-            this.LblSoyadi.Size = new System.Drawing.Size(106, 34);
+            this.LblSoyadi.Size = new System.Drawing.Size(92, 30);
             this.LblSoyadi.TabIndex = 7;
             this.LblSoyadi.Text = "Soyadı";
             // 
@@ -229,7 +229,7 @@
             this.LblDogumTarihi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.LblDogumTarihi.Location = new System.Drawing.Point(33, 287);
             this.LblDogumTarihi.Name = "LblDogumTarihi";
-            this.LblDogumTarihi.Size = new System.Drawing.Size(193, 34);
+            this.LblDogumTarihi.Size = new System.Drawing.Size(170, 30);
             this.LblDogumTarihi.TabIndex = 10;
             this.LblDogumTarihi.Text = "Doğum Tarihi";
             // 
@@ -261,7 +261,7 @@
             this.CbUyelik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.CbUyelik.Location = new System.Drawing.Point(33, 461);
             this.CbUyelik.Name = "CbUyelik";
-            this.CbUyelik.Size = new System.Drawing.Size(330, 54);
+            this.CbUyelik.Size = new System.Drawing.Size(277, 48);
             this.CbUyelik.TabIndex = 13;
             this.CbUyelik.Text = "Üyelik sözleşmesini okudum\r\n ve şartları kabul ediyorum.";
             this.CbUyelik.UseVisualStyleBackColor = true;
@@ -272,7 +272,7 @@
             this.PnlSag.Controls.Add(this.PnlEmail);
             this.PnlSag.Controls.Add(this.LblEmail);
             this.PnlSag.Controls.Add(this.TxtEmail);
-            this.PnlSag.Controls.Add(this.dtpDogumTarihi);
+            this.PnlSag.Controls.Add(this.DtpDogumTarihi);
             this.PnlSag.Controls.Add(this.PnlDogumTarihi);
             this.PnlSag.Controls.Add(this.CbUyelik);
             this.PnlSag.Controls.Add(this.PnlSoyadi);
@@ -306,7 +306,7 @@
             this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(29)))), ((int)(((byte)(52)))));
             this.LblEmail.Location = new System.Drawing.Point(33, 369);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(88, 34);
+            this.LblEmail.Size = new System.Drawing.Size(78, 30);
             this.LblEmail.TabIndex = 16;
             this.LblEmail.Text = "Email";
             // 
@@ -317,24 +317,24 @@
             this.TxtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(192)))), ((int)(((byte)(241)))));
             this.TxtEmail.Location = new System.Drawing.Point(33, 406);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(350, 35);
+            this.TxtEmail.Size = new System.Drawing.Size(350, 29);
             this.TxtEmail.TabIndex = 17;
             // 
-            // dtpDogumTarihi
+            // DtpDogumTarihi
             // 
-            this.dtpDogumTarihi.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dtpDogumTarihi.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
-            this.dtpDogumTarihi.CustomFormat = "";
-            this.dtpDogumTarihi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDogumTarihi.Location = new System.Drawing.Point(33, 326);
-            this.dtpDogumTarihi.Name = "dtpDogumTarihi";
-            this.dtpDogumTarihi.Size = new System.Drawing.Size(350, 37);
-            this.dtpDogumTarihi.TabIndex = 14;
+            this.DtpDogumTarihi.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.DtpDogumTarihi.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
+            this.DtpDogumTarihi.CustomFormat = "";
+            this.DtpDogumTarihi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DtpDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtpDogumTarihi.Location = new System.Drawing.Point(33, 326);
+            this.DtpDogumTarihi.Name = "DtpDogumTarihi";
+            this.DtpDogumTarihi.Size = new System.Drawing.Size(350, 32);
+            this.DtpDogumTarihi.TabIndex = 14;
             // 
             // FrmKayitEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 594);
@@ -382,7 +382,7 @@
         private PictureBox PbInstagram;
         private PictureBox PbFacebokk;
         private Panel PnlSag;
-        private DateTimePicker dtpDogumTarihi;
+        private DateTimePicker DtpDogumTarihi;
         private Panel PnlEmail;
         private Label LblEmail;
         private TextBox TxtEmail;

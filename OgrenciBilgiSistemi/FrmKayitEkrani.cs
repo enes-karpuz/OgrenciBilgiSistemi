@@ -17,7 +17,7 @@ namespace OgrenciBilgiSistemi
         private void BtnKayitOl_Click(object sender, EventArgs e)
         {
             SQLHelper sqlHelper = new SQLHelper();
-            sqlHelper.SqlKayit(new Ogrenci(TxtAdi.Text, TxtSoyadi.Text, dtpDogumTarihi.Value, TxtEmail.Text, CbUyelik.Checked));
+            sqlHelper.SqlKayit(new Ogrenci(TxtAdi.Text, TxtSoyadi.Text, DtpDogumTarihi.Value, TxtEmail.Text, CbUyelik.Checked));
         }
 
         private void CbUyelik_CheckedChanged(object sender, EventArgs e)

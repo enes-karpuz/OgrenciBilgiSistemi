@@ -41,7 +41,7 @@ namespace OgrenciBilgiSistemi
             {
                 sqlConnection.Open();
             }
-
+            //TODO: SELECT * FROM Kullanici yerine SELECT Sifre FROM Kullanici getirilerek DataTable yerine bir değişkene atanacak
             try
             {
                 DataTable dataTable = new DataTable();
