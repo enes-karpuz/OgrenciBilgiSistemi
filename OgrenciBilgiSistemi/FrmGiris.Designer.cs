@@ -83,6 +83,7 @@
             this.TxtSifre.PasswordChar = '*';
             this.TxtSifre.Size = new System.Drawing.Size(245, 42);
             this.TxtSifre.TabIndex = 4;
+            this.TxtSifre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSifre_KeyPress);
             // 
             // BtnGiris
             // 
