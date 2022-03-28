@@ -12,19 +12,27 @@ namespace OgrenciBilgiSistemi
 {
     public partial class FrmYoneticiEkrani : Form
     {
+        SQLHelper sqlHelper = new SQLHelper();
+        DataTable dataTable = new DataTable();
+        FrmKayitEkrani frmKayitEkrani = new FrmKayitEkrani();
+        FrmGiris frmGiris = new FrmGiris();
         public FrmYoneticiEkrani()
         {
             InitializeComponent();
         }
-
+        
         private void BtnAnaMenu_Click(object sender, EventArgs e)
         {
-            //TODO: Ana Menüye geri dönülecek
+            //!Yönetici ekranı açıldığı zaman giriş ekranını kapatma işlemi gerçekleştirilemedi.
+            frmKayitEkrani.Show();
+            this.Close();
         }
 
         private void BtnKayitListesi_Click(object sender, EventArgs e)
         {
             //TODO: Öğrenci Listesini getirecek
+            //Diğer formlarla olan bağlantı sağlanamadı.
+           
         }
 
         private void BtnKayitSil_Click(object sender, EventArgs e)
@@ -39,7 +47,7 @@ namespace OgrenciBilgiSistemi
 
         private void BtnCikis_Click(object sender, EventArgs e)
         {
-            //TODO: Programdan tamamen çıkacak
+            Application.Exit();
         }
     }
 }

@@ -40,5 +40,32 @@ namespace OgrenciBilgiSistemi
                 UseShellExecute = true
             });
         }
+
+        private void PbInstagram_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/trabzonspor/",
+                UseShellExecute = true
+            });
+        }
+
+        private void PbYoutube_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.youtube.com/user/Trabzonspor",
+                UseShellExecute = true
+            });
+        }
+
+        private void PbTwitter_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://twitter.com/Trabzonspor",
+                UseShellExecute = true
+            });  
+        }
     }
 }

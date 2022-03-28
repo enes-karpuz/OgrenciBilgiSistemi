@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace OgrenciBilgiSistemi
 {
     public partial class FrmGiris : Form
@@ -36,12 +37,14 @@ namespace OgrenciBilgiSistemi
                         if (dataTable.Rows[0]["KullaniciAdi"].ToString() == "admin")
                         {
                             FrmYoneticiEkrani frmYoneticiEkrani = new FrmYoneticiEkrani();
-                            frmYoneticiEkrani.ShowDialog();
+                            frmYoneticiEkrani.Show();
+                            this.Hide();
                         }
                         else
                         {
                             FrmKayitEkrani frmKayitEkrani = new FrmKayitEkrani();
-                            frmKayitEkrani.ShowDialog();
+                            frmKayitEkrani.Show();
+                            this.Hide();
                         }
                     }
                     else

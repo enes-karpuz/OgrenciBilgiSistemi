@@ -87,6 +87,7 @@
             this.PbTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbTwitter.TabIndex = 5;
             this.PbTwitter.TabStop = false;
+            this.PbTwitter.Click += new System.EventHandler(this.PbTwitter_Click);
             // 
             // PbYoutube
             // 
@@ -97,6 +98,7 @@
             this.PbYoutube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbYoutube.TabIndex = 4;
             this.PbYoutube.TabStop = false;
+            this.PbYoutube.Click += new System.EventHandler(this.PbYoutube_Click);
             // 
             // PbInstagram
             // 
@@ -107,6 +109,7 @@
             this.PbInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbInstagram.TabIndex = 3;
             this.PbInstagram.TabStop = false;
+            this.PbInstagram.Click += new System.EventHandler(this.PbInstagram_Click);
             // 
             // PbFacebokk
             // 
