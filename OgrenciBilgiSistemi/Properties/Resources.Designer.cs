@@ -105,7 +105,7 @@ namespace OgrenciBilgiSistemi.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_admin {
             get {
-                object obj = ResourceManager.GetObject("user-admin", resourceCulture);
+                object obj = ResourceManager.GetObject("user_admin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
